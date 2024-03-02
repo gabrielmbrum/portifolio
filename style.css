@@ -4,7 +4,11 @@
     margin: 0; /*margem*/
     padding: 0; /*distancia entre elemento e a borda*/
     box-sizing: border-box; /* pra quem todos os elementos fiquem dentro da borda da caixa*/
+    /* google fonts*/
+    font-family: "Lato", sans-serif;
 }
+
+
 
 body {
     background-color: black;
@@ -19,4 +23,46 @@ body {
 /* ESTILO CABEÇALHO */
 header{
     padding: 40px 4%;  /*o 4% n permite que ele cole nas bordas quando mudar o tamanho da página*/ 
+}
+
+/* sinal de maior faz com que altere diretamente a interface dentro do header*/
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(136, 135, 135);
+    text-decoration: none; /*tira a linha embaixo da escrita*/
+    display: inline-block;
+    transition: .1.8s;
+}
+
+header a:hover{ /*quando o usuário passa o mouse por cima*/
+    color: #fff;
+    transform: scale(1.05); /*da um zoom, so funciona para elementos block level, já o link é in line leve*/
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 30px; /* efeito curvado */
+    cursor: pointer; /* faz virar dedinho quando passa o curso sobre*/
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 23px 0px #b04cf368;
 }
