@@ -1,0 +1,22 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0; /*margem*/
+    padding: 0; /*distancia entre elemento e a borda*/
+    box-sizing: border-box; /* pra quem todos os elementos fiquem dentro da borda da caixa*/
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px; /*largura maxima*/
+    margin: 0 auto;
+}
+
+/* ESTILO CABEÇALHO */
+header{
+    padding: 40px 4%;  /*o 4% n permite que ele cole nas bordas quando mudar o tamanho da página*/ 
+}
