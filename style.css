@@ -79,7 +79,7 @@ section.topo-do-site{
 
 section.topo-do-site .flex{
     align-items: center;
-    gap: 500px;
+    gap: 150px;
 }
 
 .topo-do-site .txt-topo {
@@ -87,13 +87,13 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color: darkviolet;
+    color: white;
     font-size: 35px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo h1 span{
-    color: white;
+    color: darkviolet;
 }
 
 .topo-do-site .txt-topo p{
