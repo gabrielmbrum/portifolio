@@ -118,7 +118,6 @@ section.topo-do-site .flex{
 }
 
 /* ESTILO DO SOBRE */
-
 section.sobre {
     padding: 40px 4%;
 }
@@ -147,12 +146,27 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social {
+    align-items: center;
+    display: inline-block;
+}
+
+.social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: darkviolet;
     font-size: 23px;
     margin: 0 5px;
+    background-color: blueviolet;
+}
+
+#btn-contato-sobre button{
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600 ;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(182, 52, 207);
 }
