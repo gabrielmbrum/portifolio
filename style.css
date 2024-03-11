@@ -107,12 +107,6 @@ section.topo-do-site .flex{
     color: darkviolet;
 }
 
-.topo-do-site .txt-topo p{
-    color: white;
-    margin: 30px 0px; /*vertical e lateral*/
-    font-size: 20px;
-}
-
 .topo-do-site .img-topo img{
     position: relative; /* necessario para aplicar a flutuação*/
     animation: flutuar 2s ease-in-out infinite alternate; /*<nome_animação> tempo modo-de-começo-final-suave duração-total faz-com-que-ao-chegar-no-final-espelha-se-o-movimento*/
@@ -149,6 +143,7 @@ section.sobre .flex{
 .sobre .txt-sobre h2 span{
     color: darkviolet;
     display: block;
+    font-weight: 600;
 }
 
 .sobre .txt-sobre p{
@@ -158,7 +153,6 @@ section.sobre .flex{
 
 .txt-sobre .btn-social {
     align-items: center;
-    display: inline-block;
 }
 
 .btn-social button{
@@ -187,8 +181,6 @@ section.portifólio{
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff21;
 }
-
-
 
 section.portifólio .flex{
     justify-content: space-around; /*ele fica centralizado, adaptado e espaçado entre eles*/
@@ -308,4 +300,97 @@ footer .line-footer p{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* medidas responsivas */
+@media screen and (max-width: 1125px) {
+
+    /* CLASSES GERAIS || COMUTATIVAS */
+    .flex {
+        flex-direction: column;
+    }
+    
+    .topo-do-site h1, .sobre .txt-sobre h2{
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        /* retira o menu */
+        display: none; 
+    }
+    
+    /* TOPO DO SITE */
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    
+    section.topo-do-site .flex{
+        gap: 60px;
+    }
+
+
+    .topo-do-site .img-topo img {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* SOBRE */
+    .sobre .img-sobre img{
+        border-radius: 20px;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .sobre .txt-sobre p{
+        margin: 20px 10px;
+        text-align: justify;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .btn-social button{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: none;
+        font-size: 15px;
+    }
+    
+    #btn-contato-sobre button{
+        width: 130px;
+        height: 45px;
+        font-size: 13px;
+        border-radius: 50px;
+    }
+ 
+    /* PORTIFÓLIO */
+    .img-port{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    section.portifólio .flex{
+        gap: 40px;
+    }
+
+    /* RODAPÉ */
+    footer .line-footer{
+        text-align: center;
+    }
+
+    footer .line-footer p{
+        justify-content: center;
+    }
 }
