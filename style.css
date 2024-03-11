@@ -317,6 +317,10 @@ footer .line-footer p{
     }
     
     /* CABEÇALHO */
+    header > .interface {
+        justify-content: center;
+    }
+
     .menu-desktop, .btn-contato{
         /* retira o menu */
         display: none; 
@@ -334,7 +338,6 @@ footer .line-footer p{
     section.topo-do-site .flex{
         gap: 60px;
     }
-
 
     .topo-do-site .img-topo img {
         width: 100%;
